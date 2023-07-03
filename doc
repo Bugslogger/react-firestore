@@ -1,0 +1,39 @@
+React Firebase
+In this video we will see CURD operation with firebase in reactjs.
+
+So, watch full video till end.
+we are going to use Firestore to store and modify data.
+
+we will see everythign step to step.
+
+Step 1:
+a. Create react (I have alreaddy create a react app. so, now i will run it.) app and run it.
+it will run the application on localhost:300.
+b. goto firebase console create a project on firebase. follow the steps carefully and watch till end.
+
+Step 2:
+after firebase project is created.
+
+    a. configure firebase in our react application. [let me delete all files from react app which we are not going to use.]
+
+    b. must install firebase [npm install firebase run this command to install firebase.].
+        here i'm installing bootstrap also for creating UI. now let goto our firebase console.
+
+        I don't why it is happening. so, i will use another project on firebase which i have already created.
+    c. After enabeling the firestore it look exactly same as you saw right now.
+        you have to change rules to true. [ allow read, write: if true; ] this rule you have to apply. after applying this rule you don't need to authenticate.
+    d. Goto firebase project settings and copy the configuration. and paste it in react app.
+        follow the steps aas shown in video.we have configured our react app with firebase.
+
+Step 3:
+Create firebase functions and add/send/store data to firebase firestore.
+In previous video we have installed firebase in our reactjs.
+Now let test our function.
+
+    a. In next step we will take input from form and send it to firebase.
+
+Step 4:
+    get data from form and send to firebase.
+    Great! we have seen how to send data to firebase database with custom Id and auto generated id.
+
+    NOTE: if you don't understant anything in the video comment below or askme in discord. discord link is in the video description.
