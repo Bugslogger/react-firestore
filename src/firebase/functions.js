@@ -7,6 +7,8 @@ import {
   addDoc,
   doc,
   setDoc,
+  getDocs,
+  getDoc,
 } from "firebase/firestore";
 
 const db = getFirestore(app);
@@ -55,3 +57,35 @@ export const SendDataWithCustomID = async (CollectionName, Id, body) => {
   const response = await setDoc(doc(db, CollectionName, Id), body);
   return response;
 };
+
+/**
+ *
+ * @param {string} CollectionName
+ * @returns
+ *
+ * here we need name of collection
+ * it will get all data of a given collection.
+ *
+ */
+export const GetAllData = async (CollectionName) => {
+  if (!CollectionName) return; // if collection name is empty then terminate code here itself.
+  const res = await getDocs(collection(db, CollectionName));
+  return res;
+};
+
+/**
+ *
+ * @param {String} CollectionName
+ * @param {String} ID
+ * @returns
+ *
+ * to get a data from using specific ID.
+ * we have to need ID and collection name.
+ *
+ */
+export async function GetDataWithCustomID(CollectionName, ID) {
+  if (!CollectionName || !ID) return { message: "parameters are missing." };
+
+  const singleDataWithId = await getDoc(doc(db, CollectionName, ID));
+  return singleDataWithId;
+}

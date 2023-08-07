@@ -33,7 +33,23 @@ Now let test our function.
     a. In next step we will take input from form and send it to firebase.
 
 Step 4:
-    get data from form and send to firebase.
-    Great! we have seen how to send data to firebase database with custom Id and auto generated id.
+get data from form and send to firebase.
+Great! we have seen how to send data to firebase database with custom Id and auto generated id.
+
+# Get All data from firebase firestore.
+
+Step 5:
+a. get all data from firestore database.
+create a function for fetching all data from firestore database.
+I don't know why it's not displaying. but we will see it later.
+b. get data with custom ID. let create a function for it.
+
+    we have seen How to get data from using ID and get all data from firestore databse and map it.
+
+    we can also check it doc(data) exist in firestore database or not.
+    let see it in code.
+
+    In next video we will update data. for now share and subscribe. :)
+
 
     NOTE: if you don't understant anything in the video comment below or askme in discord. discord link is in the video description.
