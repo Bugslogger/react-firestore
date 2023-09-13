@@ -9,6 +9,8 @@ import {
   setDoc,
   getDocs,
   getDoc,
+  updateDoc,
+  deleteDoc,
 } from "firebase/firestore";
 
 const db = getFirestore(app);
@@ -88,4 +90,25 @@ export async function GetDataWithCustomID(CollectionName, ID) {
 
   const singleDataWithId = await getDoc(doc(db, CollectionName, ID));
   return singleDataWithId;
+}
+
+/**
+ *
+ * @param {String} collectionname
+ * @param {String} id
+ * @param {Object} body
+ */
+export async function UpdateData(collectionname, id, body) {
+  if (!collectionname || !id || !body) return;
+  const response = await updateDoc(doc(db, collectionname, id), body); //db was missing
+  return response;
+}
+
+/**
+ *
+ * @param {String} collectionname
+ * @param {String} id
+ */
+export async function DeleteFromFirestore(collectionname, id) {
+  return await deleteDoc(doc(db, collectionname, id));
 }

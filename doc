@@ -51,5 +51,36 @@ b. get data with custom ID. let create a function for it.
 
     In next video we will update data. for now share and subscribe. :)
 
+# Update data in firestore database
+
+1. send data firebase
+2. get data from firestore database and display on web page
+3. update data stored in firestore database
+
+# [for send/get data from firestore I have already create video on this 2 topics. You can watch it.]
+
+Let start....
+I have already create a basic UI. A Input and a button.
+
+step 1: write code to get text from input and send it to firestore database.
+step 2: let test it. First let map the data.
+there's already one data is available which is displaying on the screen.
+
+step 3: send text to database.
+step 4: now let update the data existing data.
+add a firebase function for updating data.
+
+    Now we can update the data in firestore database.
+
+## In next video we will see how to delete data from database.
+
+# In this video we will see how to delete data from firestore.
+
+step 1: add delete icon
+step 2: add firebse delete function too firebase.js
+step 3: call delete function on delete icon.
+
+                    Thanks for watching...
+                    Please subscribe to Bugslogger.
 
     NOTE: if you don't understant anything in the video comment below or askme in discord. discord link is in the video description.
